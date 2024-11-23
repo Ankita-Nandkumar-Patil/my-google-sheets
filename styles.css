@@ -61,6 +61,7 @@ body{
 }
 .address_bar{
     width: 5rem;
+    text-align: center;
 }
 .formula_bar{
     width: calc(100vw - 8rem);
@@ -68,38 +69,79 @@ body{
 
 .grid_cont{
     height: calc(100vh - 12rem);
-    background-color: grey;
+    /* background-color: grey; */
     position: relative;
+    overflow-x: auto;
 }
 
 .top_left_dummy_cont{
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
     height: 2rem;
-    width: 2rem;
+    width: 2.3rem;
     background-color: #89A8B2;
 }
 
 .address_col_cont{
-    width: 2rem;
-    height: 10rem;
-    background-color: #B3C8CF;
+    position: sticky;
+    left: 0;
+    top: 2rem;
+    background-color: #E1E5EA;
+    border: 1px solid #D8D3CD;
+}
+.address_col{
+    height: 2rem;
+    width: 2.3rem;
+    border: 1px solid #D8D3CD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .address_row_cont{
+    position: sticky;
+    left: 2.3rem;
+    top: 0;
+    /* height: 2rem; */
+    background-color: #E1E5EA;
+    display: flex;
+    overflow-y: auto;
+    border: 1px solid #D8D3CD;
+}
+
+.address_row{
     height: 2rem;
-    background-color: #B3C8CF;
+    width: 5rem;
+    border: 1px solid #D8D3CD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cell_cont{
     position: absolute;
     top: 0;
-    left: 2rem;
-    background-color: red;
-    height: 10rem;
-    width: 10rem;
+    left: 2.3rem;
+    background-color: #FAF3F3;
+    border-collapse: collapse;
 }
 
+.row_cont{
+    display: table-row;
+    border: 1px solid #D8D3CD;
+}
 
-
+.cell{
+    display: table-cell;
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #D8D3CD;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+}
 
 
 .sheet_actions_cont{
