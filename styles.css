@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+body{ 
+    margin: 0;
+    padding: 0;
+}
+
+.page_actions_cont{
+    height: 3rem;
+    background-color: #079992;
+    display: flex;
+    align-items: flex-end;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.page_action{
+    margin: 8px;
+}
+
+.cellprop_actions_cont{
+    height: 3rem;
+    background-color: #ced6e0;
+    display: flex;
+    align-items: center;
+}
+
+.cellprop_actions_cont > * {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.cellprop_actions_cont > select {
+    border: none;
+    border-radius: 1px;
+    outline: none;
+}
+
+.font_family_prop , .font_size_prop {
+    padding: 4px
+}
+
+.formula_actions_cont{
+    height: 3rem;
+    background-color: #ced6e0;
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+.formula_actions_cont > input{
+    border: none;
+    outline: none;
+    height: 70%;
+}
+
+.formula_icon{
+    height: 1.3rem;
+    margin: 0 8px;
+}
+.address_bar{
+    width: 5rem;
+}
+.formula_bar{
+    width: calc(100vw - 8rem);
+}
+
+.grid_cont{
+    height: calc(100vh - 12rem);
+    background-color: grey;
+    position: relative;
+}
+
+.top_left_dummy_cont{
+    height: 2rem;
+    width: 2rem;
+    background-color: #89A8B2;
+}
+
+.address_col_cont{
+    width: 2rem;
+    height: 10rem;
+    background-color: #B3C8CF;
+}
+
+.address_row_cont{
+    height: 2rem;
+    background-color: #B3C8CF;
+}
+
+.cell_cont{
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    background-color: red;
+    height: 10rem;
+    width: 10rem;
+}
+
+
+
+
+
+.sheet_actions_cont{
+    height: 3rem;
+    background-color: #ced6e0;
+    display: flex;
+    align-items: center;
+}
+
+.sheet_actions_cont > *{
+    display: inline-block;
+}
+.sheet_add_icon{
+    width: 3vw;
+}
+
+.sheets_folder_cont{
+    display: flex;
+    align-items: center;
+    width: calc(100vw - 3vw);
+    height: 80%;
+}
+
+.sheet_folder{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+}

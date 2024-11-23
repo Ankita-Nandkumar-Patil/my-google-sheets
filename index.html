@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page_actions_cont">
+      <div class="page_action">Home</div>
+      <div class="page_action">File</div>
+      <div class="page_action">Insert</div>
+      <div class="page_action">Layout</div>
+      <div class="page_action">Help</div>
+    </div>
+    <div class="cellprop_actions_cont">
+      <span class="material-icons"> content_copy </span>
+      <span class="material-icons"> content_cut </span>
+      <span class="material-icons"> content_paste </span>
+      <select class="font_family_prop">
+        <option value="arial">Arial</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="monospace">Monospace</option>
+        <option value="cursive">Cursive</option>
+        <option value="sans-serif">Sans-Serif</option>
+      </select>
+      <select class="font_size_prop">
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+        <option value="22">22</option>
+      </select>
+      <span class="material-icons"> format_bold </span>
+      <span class="material-icons"> format_italic </span>
+      <span class="material-icons"> format_underlined </span>
+      <span class="material-icons"> format_align_left </span>
+      <span class="material-icons"> format_align_center </span>
+      <span class="material-icons"> format_align_right </span>
+    </div>
+    <div class="formula_actions_cont">
+      <input type="text" readonl class="address_bar">
+      <img class="formula_icon" src="https://img.icons8.com/ios/50/000000/formula-fx.png" />
+      <input type="text" class="formula_bar">
+    </div>
+    
+    <div class="grid_cont">
+      <div class="top_left_dummy_cont"></div>
+      <div class="address_col_cont"></div>
+      <div class="cell_cont">
+        <div class="address_row_cont"></div>
+      </div>
+    </div>
+
+    <div class="sheet_actions_cont">
+      <div class="sheet_add_icon">
+        <span class="material-icons"> post_add </span>
+      </div>
+      <div class="sheets_folder_cont">
+        <div class="sheet_folder">Sheet 1</div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
