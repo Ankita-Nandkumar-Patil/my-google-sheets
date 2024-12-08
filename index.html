@@ -18,6 +18,7 @@
       <div class="page_action">Layout</div>
       <div class="page_action">Help</div>
     </div>
+
     <div class="cellprop_actions_cont">
       <span class="material-icons"> content_copy </span>
       <span class="material-icons"> content_cut </span>
@@ -36,19 +37,33 @@
         <option value="20">20</option>
         <option value="22">22</option>
       </select>
-      <span class="material-icons"> format_bold </span>
-      <span class="material-icons"> format_italic </span>
-      <span class="material-icons"> format_underlined </span>
-      <span class="material-icons"> format_align_left </span>
-      <span class="material-icons"> format_align_center </span>
-      <span class="material-icons"> format_align_right </span>
+      <span class="material-icons bold"> format_bold </span>
+      <span class="material-icons italic"> format_italic </span>
+      <span class="material-icons underline"> format_underlined </span>
+      <span class="left material-icons alignment"> format_align_left </span>
+      <span class="center material-icons alignment"> format_align_center </span>
+      <span class="right material-icons alignment"> format_align_right </span>
+      <div class="color_prop">
+        <span class="material-icons"> format_color_text </span>
+        <input type="color" class="fontColor_prop">
+      </div>
+      <div class="color_prop">
+        <span class="material-icons"> format_color_fill </span>
+        <input type="color" class="bgColor_prop">
+      </div>
     </div>
+
+    <!-- formula bar -->
     <div class="formula_actions_cont">
-      <input type="text" readonly class="address_bar">
-      <img class="formula_icon" src="https://img.icons8.com/ios/50/000000/formula-fx.png" />
-      <input type="text" class="formula_bar">
+      <input type="text" readonly class="address_bar" />
+      <img
+        class="formula_icon"
+        src="https://img.icons8.com/ios/50/000000/formula-fx.png"
+      />
+      <input type="text" class="formula_bar" />
     </div>
-    
+
+    <!-- cells grid -->
     <div class="grid_cont">
       <div class="top_left_dummy_cont"></div>
       <div class="address_col_cont"></div>
@@ -66,6 +81,7 @@
       </div>
     </div>
 
-    <script src="/script.js"></script>
+    <script src="./grid.js"></script>
+    <script src="./cell_properties.js"></script>
   </body>
 </html>
